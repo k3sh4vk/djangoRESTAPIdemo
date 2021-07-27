@@ -18,7 +18,7 @@ from . import views as restapiView
 
 urlpatterns = [
     path('', restapiView.apiAccess, name='apiAccess'),
-    path('register/', restapiView.loginView, name='loginView'),
+    path('register*', restapiView.loginView, name='loginView'),
     path('user-list/', restapiView.userList, name='user-list'),
     path('user-detail/<int:pk>/', restapiView.userDetail, name='user-detail'),
     path('user-create/', restapiView.userCreate, name='user-create'),
